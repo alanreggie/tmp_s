@@ -212,11 +212,6 @@ simpleSketch.clearfn = function(){
 };
 
 
-
-
-
-
-
 /****************************************ELLIPSE HANDLER*******/
 simpleSketch.ellipse = function () {
   simpleSketch.resetCanvasHandlers();
@@ -591,7 +586,7 @@ simpleSketch.undo = function () {
 
     //pop from the undo array
     simpleSketch.canvas.loadFromJSON(simpleSketch.undoArray.pop()); 
-      simpleSketch.canvas.renderAll();
+    simpleSketch.canvas.renderAll();
 
     console.log(simpleSketch.undoArray); 
     console.log('length:' + simpleSketch.undoArray.length)
